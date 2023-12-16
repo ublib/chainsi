@@ -10,6 +10,11 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "rootDir": ".",
+    "paths": {
+      "chainsi": [
+        "./src"
+      ]
+    }
   },
   "include": [
     "src",

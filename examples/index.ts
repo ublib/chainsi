@@ -1,12 +1,3 @@
-# chainsi
-
-ANSI escape color code generator by property-chaining based API
-
-status: not published
-
-## Usage
-
-```ts
 import { t } from "chainsi";
 
 console.log(`Hello, this is ${t("sample").red.bgGreen.underline.bold.italic._}.`);
@@ -35,4 +26,3 @@ console.log(t("bgCyan").bgCyan._);
 console.log(t("bgWhite").bgWhite._);
 console.log(t("bgGray").bgGray._);
 console.log(t("bgBlack").bgBlack._);
-```
