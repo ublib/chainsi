@@ -1,17 +1,29 @@
 {
   "name": "chainsi",
   "version": "0.0.1",
-  "description": "",
+  "author": "Ubugeeei <ubuge1122@gmail.com>",
+  "license": "MIT",
+  "description": "ANSI escape color code generator by property-chaining based API",
+  "keywords": [
+    "ansi",
+    "color"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ublib/chainsi",
+    "directory": "src"
+  },
   "type": "module",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsx build",
     "fmt": "prettier",
-    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint"
+    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint",
+    "deploy": "pnpm publish --access=public"
   },
-  "keywords": [],
-  "author": "Ubugeeei <ubuge1122@gmail.com>",
-  "license": "ISC",
   "volta": {
     "node": "20.10.0",
     "pnpm": "8.12.1"
