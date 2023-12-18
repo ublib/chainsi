@@ -40,7 +40,7 @@ export const clearChainsiSync = () => [rimraf("dist")];
 
 await (async function main() {
   console.log("clear dist...");
-  await Promise.allSettled([...clearChainsiSync()]);
+  await Promise.allSettled(clearChainsiSync());
   console.log(`${t("✔︎").green._} finished clearing dist`);
 
   console.log("building chainsi...");

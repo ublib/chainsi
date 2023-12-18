@@ -20,8 +20,8 @@
   ],
   "scripts": {
     "build": "tsx build",
-    "fmt": "prettier",
-    "lint": "ESLINT_USE_FLAT_CONFIG=true eslint",
+    "fmt": "npx @biomejs/biome format .",
+    "lint": "oxlint",
     "deploy": "pnpm publish --access=public"
   },
   "volta": {
@@ -33,9 +33,7 @@
     "@types/node": "^20.10.5",
     "dts-bundle": "^0.7.3",
     "esbuild": "^0.19.9",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.1.1",
+    "oxlint": "latest",
     "rimraf": "^5.0.5",
     "tsx": "^4.6.2",
     "typescript": "^5.3.3"
